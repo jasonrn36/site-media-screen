@@ -19,6 +19,9 @@
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
+        <div class="botao-menu">
+            <button type="button">Abrir Menu</button>
+        </div>
         <nav class="container">
             <ul class="menu">
                 <li>
@@ -55,7 +58,7 @@
     </header>
     <div class="container conteudo">
         <main>
-            <section >
+            <section class="destaque" >
                 <h2> Em destaque</h2>
                 <article class="noticia">
                     <a href="#">
@@ -63,6 +66,48 @@
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit, necessitatibus quae quos error enim suscipit vel.</h3>
                     </a>
                 </article>
+            </section>
+            <section>
+                <h2>Últimas notícias</h2>
+                <div class="noticias">
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://jasonrn36.github.io/placeholder/320.png" alt="imagem em 320 pixels">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit, necessitatibus quae quos error enim suscipit vel.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://jasonrn36.github.io/placeholder/320.png" alt="imagem em 320 pixels">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit, necessitatibus quae quos error enim suscipit vel.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://jasonrn36.github.io/placeholder/320.png" alt="imagem em 320 pixels">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit, necessitatibus quae quos error enim suscipit vel.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://jasonrn36.github.io/placeholder/320.png" alt="imagem em 320 pixels">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit, necessitatibus quae quos error enim suscipit vel.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://jasonrn36.github.io/placeholder/320.png" alt="imagem em 320 pixels">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit, necessitatibus quae quos error enim suscipit vel.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://jasonrn36.github.io/placeholder/320.png" alt="imagem em 320 pixels">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit, necessitatibus quae quos error enim suscipit vel.</h3>
+                        </a>
+                    </article>
+                </div>
+
             </section>
         </main>
         <aside>
@@ -89,6 +134,15 @@
             </section>
         </aside>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle(500);
+            })
+        })
+    </script>
 
 </body>
 </html>
